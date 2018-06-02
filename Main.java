@@ -4,7 +4,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        long start = System.currentTimeMillis();
         List<String> file1 = new ArrayList<String>();
         List<String> file2 = new ArrayList<String>();
         ReadFromFile readFile1 = new ReadFromFile("C:\\file1", file1);
@@ -24,8 +23,5 @@ public class Main {
             if (!file2.contains(x))
                 System.out.println(x);
         }
-
-        long alltime = System.currentTimeMillis() - start;
-        System.out.println(alltime);
     }
 }
